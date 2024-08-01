@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses Page</title>
+    
+    <!-- my framework -->
+    <link rel="stylesheet" href="css/myFramework.css">
+
+    <!-- main css file -->
+    <link rel="stylesheet" href="css/styling.css">
+
+    <!-- font awesome connected -->
+     <link rel="stylesheet" href="css/all.css">
+
+    <!-- normalization file that enable property to be worked in multi client! -->
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- logo to the page -->
+    <link rel="icon" href="imgs/courses.png">
+
+</head>
+<body>
+    <sidebar class="page d-flex">
+        
+        <section>
+            <div class="sidebar p-20 m-20 p-relative bg-white">
+                <h3 class="mb-50 p-relative txt-c mt-0 tt-c">SE ahmed nayel</h3>
+                <ul> <!--fa-fw : fixed width-->
+                    <li> <a href="index.html">               <i class="fa-solid fa-chart-gantt fa-fw"></i> <span>   dashboard</span> </a> </li>
+                    <li> <a href="setting.html">             <i class="fa-solid fa-gear"></i>              <span>   settings </span> </a> </li>
+                    <li> <a href="profile.html">             <i class="fa-solid fa-user-tie"></i>          <span>   profile  </span> </a> </li>
+                    <li> <a href="project.html">             <i class="fa-solid fa-diagram-project"></i>   <span>   projects </span> </a> </li>
+                    <li> <a class="active" href="courses.html"><i class="fa-solid fa-graduation-cap"></i>    <span> courses  </span> </a> </li>
+                    <li> <a href="friends.html">               <i class="fa-solid fa-user-group"></i>        <span>   friends  </span> </a> </li>
+                    <li> <a href="files.html">               <i class="fa-solid fa-file"></i>                  <span>   files  </span> </a> </li>
+                    <li> <a href="plan.html">               <i class="fa-solid fa-credit-card"></i>       <span>   plan     </span> </a> </li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="content w-full">
+            
+            <!-- head section -->
+            <div class="head bg-white p-15 flex-between ">
+                <!-- in the left -->
+                <div class="search p-relative">
+                    <input class="p-10" type="search" placeholder="search here...">
+                </div>
+            
+                <!-- in the right -->
+                <div class="icon d-flex align-center">
+                    <!-- fa-lg : as a size to be large -->
+                    <span class="notification p-relative"> <i class="fa-solid fa-bell fa-lg"></i> </span>
+                    <img src="imgs/user.jpg" alt="avatar image">
+                </div>
+            
+            </div>
+
+            <!-- topic -->
+            <div class="topic"> 
+                <h1 class="p-relative">courses</h1>
+            </div>
+
+            <div class="courses-page d-grid gap-20">
+                
+                <div class="course-1 bg-white rad-10">
+                    
+                    <div class="background p-relative">
+                        <div class="cover-img">
+                            <img src="imgs/courses-01.jpg" alt="cover image">
+                        </div>
+    
+                        <div class="instructor-img">
+                            <img src="imgs/user.jpg" alt="instructor image" title="instructor person">
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <div class="info p-10">
+                            <h3 class="tt-c" >learning web design</h3>
+                            <p class="c-gray fs-14 line-1-6 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quaerat?</p>
+                        </div>
+    
+                        <div class="status flex-between border-t-ccc p-10 p-relative">
+                            <span class="d-block fs-14 c-gray" > <i class="fa-solid fa-user"></i> 950</span>
+                            <span class="private-btn d-block fs-14 c-white bg-blue rad-10 tt-c p-5"> course info </span>
+                            <span class="d-block fs-14 c-gray" > <i class="fa-solid fa-user"></i> <i class="fa-solid fa-dollar-sign"></i> 165 </span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="course-2 bg-white rad-10">
+ 
+                    <div class="background p-relative">
+                        <div class="cover-img">
+                            <img src="imgs/courses-02.jpg" alt="cover image">
+                        </div>
+    
+                        <div class="instructor-img">
+                            <img src="imgs/user.jpg" alt="instructor image" title="instructor person">
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <div class="info p-10">
+                            <h3 class="tt-c" >learning web analysis</h3>
+                            <p class="c-gray fs-14 line-1-6 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quaerat?</p>
+                        </div>
+    
+                        <div class="status flex-between border-t-ccc p-10 p-relative">
+                            <span class="d-block fs-14 c-gray" > <i class="fa-solid fa-user"></i> 740</span>
+                            <span class="private-btn d-block fs-14 c-white bg-blue rad-10 tt-c p-5"> course info </span>
+                            <span class="d-block fs-14 c-gray" > <i class="fa-solid fa-user"></i> <i class="fa-solid fa-dollar-sign"></i> 150 </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-3 bg-white rad-10">
+                 
+                    <div class="background p-relative">
+                        <div class="cover-img">
+                            <img src="imgs/courses-03.jpg" alt="cover image">
+                        </div>
+    
+                        <div class="instructor-img">
+                            <img src="imgs/user.jpg" alt="instructor image" title="instructor person">
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <div class="info p-10">
+                            <h3 class="tt-c" >learning web development</h3>
+                            <p class="c-gray fs-14 line-1-6 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quaerat?</p>
+                        </div>
+    
+                        <div class="status flex-between border-t-ccc p-10 p-relative">
+                            <span class="d-block fs-14 c-gray" > <i class="fa-solid fa-user"></i> 540</span>
+                            <span class="private-btn d-block fs-14 c-white bg-blue rad-10 tt-c p-5"> course info </span>
+                            <span class="d-block fs-14 c-gray" > <i class="fa-solid fa-user"></i> <i class="fa-solid fa-dollar-sign"></i> 150 </span>
+                        </div>
+                    </div>
+                
+                </div>
+
+                <div class="course-4 bg-white rad-10">
+                    <div class="background p-relative">
+                        <div class="cover-img">
+                            <img src="imgs/courses-04.jpg" alt="cover image">
+                        </div>
+    
+                        <div class="instructor-img">
+                            <img src="imgs/user.jpg" alt="instructor image" title="instructor person">
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <div class="info p-10">
+                            <h3 class="tt-c" >learning web development</h3>
+                            <p class="c-gray fs-14 line-1-6 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quaerat?</p>
+                        </div>
+    
+                        <div class="status flex-between border-t-ccc p-10 p-relative">
+                            <span class="d-block fs-14 c-gray" > <i class="fa-solid fa-user"></i> 540</span>
+                            <span class="private-btn d-block fs-14 c-white bg-blue rad-10 tt-c p-5"> course info </span>
+                            <span class="d-block fs-14 c-gray" > <i class="fa-solid fa-user"></i> <i class="fa-solid fa-dollar-sign"></i> 150 </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-5 bg-white rad-10">
+                    <div class="background p-relative">
+                        <div class="cover-img">
+                            <img src="imgs/courses-05.jpg" alt="cover image">
+                        </div>
+    
+                        <div class="instructor-img">
+                            <img src="imgs/user.jpg" alt="instructor image" title="instructor person">
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <div class="info p-10">
+                            <h3 class="tt-c" >learning web development</h3>
+                            <p class="c-gray fs-14 line-1-6 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quaerat?</p>
+                        </div>
+    
+                        <div class="status flex-between border-t-ccc p-10 p-relative">
+                            <span class="d-block fs-14 c-gray" > <i class="fa-solid fa-user"></i> 540</span>
+                            <span class="private-btn d-block fs-14 c-white bg-blue rad-10 tt-c p-5"> course info </span>
+                            <span class="d-block fs-14 c-gray" > <i class="fa-solid fa-user"></i> <i class="fa-solid fa-dollar-sign"></i> 150 </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-6 bg-white rad-10">
+                    
+                    <div class="background p-relative">
+                        <div class="cover-img">
+                            <img src="imgs/courses-06.jpg" alt="cover image">
+                        </div>
+    
+                        <div class="instructor-img">
+                            <img src="imgs/user.jpg" alt="instructor image" title="instructor person">
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <div class="info p-10">
+                            <h3 class="tt-c" >learning web design</h3>
+                            <p class="c-gray fs-14 line-1-6 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quaerat?</p>
+                        </div>
+    
+                        <div class="status flex-between border-t-ccc p-10 p-relative">
+                            <span class="d-block fs-14 c-gray" > <i class="fa-solid fa-user"></i> 950</span>
+                            <span class="private-btn d-block fs-14 c-white bg-blue rad-10 tt-c p-5"> course info </span>
+                            <span class="d-block fs-14 c-gray" > <i class="fa-solid fa-user"></i> <i class="fa-solid fa-dollar-sign"></i> 165 </span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="course-7 bg-white rad-10">
+ 
+                    <div class="background p-relative">
+                        <div class="cover-img">
+                            <img src="imgs/courses-07.jpg" alt="cover image">
+                        </div>
+    
+                        <div class="instructor-img">
+                            <img src="imgs/user.jpg" alt="instructor image" title="instructor person">
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <div class="info p-10">
+                            <h3 class="tt-c" >learning web analysis</h3>
+                            <p class="c-gray fs-14 line-1-6 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quaerat?</p>
+                        </div>
+    
+                        <div class="status flex-between border-t-ccc p-10 p-relative">
+                            <span class="d-block fs-14 c-gray" > <i class="fa-solid fa-user"></i> 740</span>
+                            <span class="private-btn d-block fs-14 c-white bg-blue rad-10 tt-c p-5"> course info </span>
+                            <span class="d-block fs-14 c-gray" > <i class="fa-solid fa-user"></i> <i class="fa-solid fa-dollar-sign"></i> 150 </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-8 bg-white rad-10">
+                 
+                    <div class="background p-relative">
+                        <div class="cover-img">
+                            <img src="imgs/courses-08.jpg" alt="cover image">
+                        </div>
+    
+                        <div class="instructor-img">
+                            <img src="imgs/user.jpg" alt="instructor image" title="instructor person">
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <div class="info p-10">
+                            <h3 class="tt-c" >learning web development</h3>
+                            <p class="c-gray fs-14 line-1-6 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quaerat?</p>
+                        </div>
+    
+                        <div class="status flex-between border-t-ccc p-10 p-relative">
+                            <span class="d-block fs-14 c-gray" > <i class="fa-solid fa-user"></i> 540</span>
+                            <span class="private-btn d-block fs-14 c-white bg-blue rad-10 tt-c p-5"> course info </span>
+                            <span class="d-block fs-14 c-gray" > <i class="fa-solid fa-user"></i> <i class="fa-solid fa-dollar-sign"></i> 150 </span>
+                        </div>
+                    </div>
+                
+                </div>
+
+                <div class="course-9 bg-white rad-10">
+                    <div class="background p-relative">
+                        <div class="cover-img">
+                            <img src="imgs/courses-09.jpg" alt="cover image">
+                        </div>
+    
+                        <div class="instructor-img">
+                            <img src="imgs/user.jpg" alt="instructor image" title="instructor person">
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <div class="info p-10">
+                            <h3 class="tt-c" >learning web development</h3>
+                            <p class="c-gray fs-14 line-1-6 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quaerat?</p>
+                        </div>
+    
+                        <div class="status flex-between border-t-ccc p-10 p-relative">
+                            <span class="d-block fs-14 c-gray" > <i class="fa-solid fa-user"></i> 540</span>
+                            <span class="private-btn d-block fs-14 c-white bg-blue rad-10 tt-c p-5"> course info </span>
+                            <span class="d-block fs-14 c-gray" > <i class="fa-solid fa-user"></i> <i class="fa-solid fa-dollar-sign"></i> 150 </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-10 bg-white rad-10">
+                    <div class="background p-relative">
+                        <div class="cover-img">
+                            <img src="imgs/courses-10.jpg" alt="cover image">
+                        </div>
+    
+                        <div class="instructor-img">
+                            <img src="imgs/user.jpg" alt="instructor image" title="instructor person">
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <div class="info p-10">
+                            <h3 class="tt-c" >learning web development</h3>
+                            <p class="c-gray fs-14 line-1-6 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quaerat?</p>
+                        </div>
+    
+                        <div class="status flex-between border-t-ccc p-10 p-relative">
+                            <span class="d-block fs-14 c-gray" > <i class="fa-solid fa-user"></i> 540</span>
+                            <span class="private-btn d-block fs-14 c-white bg-blue rad-10 tt-c p-5"> course info </span>
+                            <span class="d-block fs-14 c-gray" > <i class="fa-solid fa-user"></i> <i class="fa-solid fa-dollar-sign"></i> 150 </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    
+    </sidebar>
+</body>
+</html>

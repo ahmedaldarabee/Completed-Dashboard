@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Files Page</title>
+    
+    <!-- my framework -->
+    <link rel="stylesheet" href="css/myFramework.css">
+
+    <!-- main css file -->
+    <link rel="stylesheet" href="css/styling.css">
+
+    <!-- font awesome connected -->
+     <link rel="stylesheet" href="css/all.css">
+
+    <!-- normalization file that enable property to be worked in multi client! -->
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- logo to the page -->
+    <link rel="icon" href="imgs/file.png">
+
+</head>
+<body>
+    <sidebar class="page d-flex">
+        
+        <section>
+            <div class="sidebar p-20 m-20 p-relative bg-white">
+                <h3 class="mb-50 p-relative txt-c mt-0 tt-c">SE ahmed nayel</h3>
+                <ul> <!--fa-fw : fixed width-->
+                    <li> <a href="index.html">               <i class="fa-solid fa-chart-gantt fa-fw"></i> <span>   dashboard</span> </a> </li>
+                    <li> <a href="setting.html">             <i class="fa-solid fa-gear"></i>              <span>   settings </span> </a> </li>
+                    <li> <a href="profile.html">             <i class="fa-solid fa-user-tie"></i>          <span>   profile  </span> </a> </li>
+                    <li> <a href="project.html">             <i class="fa-solid fa-diagram-project"></i>   <span>   projects </span> </a> </li>
+                    <li> <a href="courses.html"><i class="fa-solid fa-graduation-cap"></i>    <span> courses  </span> </a> </li>
+                    <li> <a href="friends.html">               <i class="fa-solid fa-user-group"></i>        <span>   friends  </span> </a> </li>
+                    <li> <a class="active" href="files.html">               <i class="fa-solid fa-file"></i>                  <span>   files  </span> </a> </li>
+                    <li> <a href="plan.html">               <i class="fa-solid fa-credit-card"></i>       <span>   plan     </span> </a> </li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="content w-full">
+            
+            <!-- head section -->
+            <div class="head bg-white p-15 flex-between ">
+                <!-- in the left -->
+                <div class="search p-relative">
+                    <input class="p-10" type="search" placeholder="search here...">
+                </div>
+            
+                <!-- in the right -->
+                <div class="icon d-flex align-center">
+                    <!-- fa-lg : as a size to be large -->
+                    <span class="notification p-relative"> <i class="fa-solid fa-bell fa-lg"></i> </span>
+                    <img src="imgs/user.jpg" alt="avatar image">
+                </div>
+            
+            </div>
+
+            <!-- topic -->
+            <div class="topic"> 
+                <h1 class="p-relative">files</h1>
+            </div>
+
+            <div class="files-page d-flex gap-20 m-20">
+
+                <!-- files statistics -->
+                <div class="files-status bg-white rad-10 p-20">
+
+                    <div class="title">
+                        <h3 class="tt-c">file statistics</h3>
+                    </div>
+
+                    <div class="content">
+
+                        <!-- .content .file-box span i -->
+                        <div class="file-box flex-between border-ccc p-10 mt-10">
+
+                            <span class="fs-14 image"> <i class="fa-solid fa-images"></i> </span>
+                            
+                            <span class="fs-14 tt-c">
+                                <span  class="d-block" >PDF</span>
+                                <span  class="d-block c-gray" >130</span>
+                            </span>
+
+                            <span class="fs-14 c-gray">6.5GB</span>
+                        </div>
+
+                        <div class="file-box flex-between border-ccc p-10 mt-10">
+
+                            <span class="fs-14 pfd"> <i class="fa-solid fa-file-pdf"></i> </span>
+                            
+                            <span class="fs-14 tt-c">
+                                <span  class="d-block" >PDF</span>
+                                <span  class="d-block c-gray" >130</span>
+                            </span>
+
+                            <span class="fs-14 c-gray">6.5GB</span>
+                        </div>
+
+                        <div class="file-box flex-between border-ccc p-10 mt-10">
+
+                            <span class="fs-14 word"> <i class="fa-regular fa-file-word"></i> </span>
+                            
+                            <span class="fs-14 tt-c">
+                                <span  class="d-block" >PDF</span>
+                                <span  class="d-block c-gray" >130</span>
+                            </span>
+
+                            <span class="fs-14 c-gray">6.5GB</span>
+                        </div>
+
+                        <div class="file-box flex-between border-ccc p-10 mt-10">
+
+                            <span class="fs-14 csv"> <i class="fa-solid fa-file-csv"></i> </span>
+                            
+                            <span class="fs-14 tt-c">
+                                <span  class="d-block" >PDF</span>
+                                <span  class="d-block c-gray" >130</span>
+                            </span>
+
+                            <span class="fs-14 c-gray">6.5GB</span>
+                        </div>
+
+                    </div>
+
+                    <div class="btn-upload">
+                        <a href="#" class="tt-c c-white p-5 bg-blue rad-10 fs-14 d-block"><i class="fa-solid fa-angles-up"></i> upload</a>
+                    </div>
+
+                </div>
+
+                <!-- all file section -->
+                <div class="files-data d-grid gap-20">
+                    
+                    <div class="file bg-white p-10 rad-10">
+
+                        <div class="icon-download p-absolute">
+                            <i class="fa-solid fa-download c-gray"></i>
+                        </div>
+
+                        <div class="img-part txt-c">
+                            <img class="mtb-15" src="imgs/pdf-64.png" alt="pdf image">
+                        </div>
+
+                        <div class="file-name txt-c">
+                            <p class="fs-14 mb-10">myFile.pdf</p>
+                        </div>
+
+                        <div class="uploaded-by">
+                            <p class="tt-c c-gray fs-14">ahmed</p>
+                        </div>
+
+                        <div class="date-info flex-between border-t-ccc p-10 mt-10">
+                            <span class="c-gray fs-14 d-block">20/09/2020</span>
+                            <span class="c-gray fs-14 d-block">12.5MB</span>
+                        </div>
+                    
+                    </div>
+
+                    <div class="file bg-white p-10 rad-10">
+
+                        <div class="icon-download p-absolute">
+                            <i class="fa-solid fa-download c-gray"></i>
+                        </div>
+
+                        <div class="img-part txt-c">
+                            <img class="mtb-15" src="imgs/word-64.png" alt="pdf image">
+                        </div>
+
+                        <div class="file-name txt-c">
+                            <p class="fs-14 mb-10">mousa-file.docx</p>
+                        </div>
+
+                        <div class="uploaded-by">
+                            <p class="tt-c c-gray fs-14">mousa</p>
+                        </div>
+
+                        <div class="date-info flex-between border-t-ccc p-10 mt-10">
+                            <span class="c-gray fs-14 d-block">20/09/2020</span>
+                            <span class="c-gray fs-14 d-block">12.5MB</span>
+                        </div>
+                    
+                    </div>
+                    
+                    <div class="file bg-white p-10 rad-10">
+
+                        <div class="icon-download p-absolute">
+                            <i class="fa-solid fa-download c-gray"></i>
+                        </div>
+
+                        <div class="img-part txt-c">
+                            <img class="mtb-15" src="imgs/pptx-64.png" alt="pdf image">
+                        </div>
+
+                        <div class="file-name txt-c">
+                            <p class="fs-14 mb-10">ali-file.pptx</p>
+                        </div>
+
+                        <div class="uploaded-by">
+                            <p class="tt-c c-gray fs-14">ali</p>
+                        </div>
+
+                        <div class="date-info flex-between border-t-ccc p-10 mt-10">
+                            <span class="c-gray fs-14 d-block">20/09/2020</span>
+                            <span class="c-gray fs-14 d-block">12.5MB</span>
+                        </div>
+                    
+                    </div>
+
+                    <div class="file bg-white p-10 rad-10">
+
+                        <div class="icon-download p-absolute">
+                            <i class="fa-solid fa-download c-gray"></i>
+                        </div>
+
+                        <div class="img-part txt-c">
+                            <img class="mtb-15" src="imgs/zip-64.png" alt="pdf image">
+                        </div>
+
+                        <div class="file-name txt-c">
+                            <p class="fs-14 mb-10">osama-file.zip</p>
+                        </div>
+
+                        <div class="uploaded-by">
+                            <p class="tt-c c-gray fs-14">osama</p>
+                        </div>
+
+                        <div class="date-info flex-between border-t-ccc p-10 mt-10">
+                            <span class="c-gray fs-14 d-block">20/09/2020</span>
+                            <span class="c-gray fs-14 d-block">12.5MB</span>
+                        </div>
+                    
+                    </div>
+
+                    <div class="file bg-white p-10 rad-10">
+
+                        <div class="icon-download p-absolute">
+                            <i class="fa-solid fa-download c-gray"></i>
+                        </div>
+
+                        <div class="img-part txt-c">
+                            <img class="mtb-15" src="imgs/png-64.png" alt="pdf image">
+                        </div>
+
+                        <div class="file-name txt-c">
+                            <p class="fs-14 mb-10">nader-file.pdf</p>
+                        </div>
+
+                        <div class="uploaded-by">
+                            <p class="tt-c c-gray fs-14">nader</p>
+                        </div>
+
+                        <div class="date-info flex-between border-t-ccc p-10 mt-10">
+                            <span class="c-gray fs-14 d-block">20/09/2020</span>
+                            <span class="c-gray fs-14 d-block">12.5MB</span>
+                        </div>
+                    
+                    </div>
+
+                    <div class="file bg-white p-10 rad-10">
+
+                        <div class="icon-download p-absolute">
+                            <i class="fa-solid fa-download c-gray"></i>
+                        </div>
+
+                        <div class="img-part txt-c">
+                            <img class="mtb-15" src="imgs/psd-64.png" alt="pdf image">
+                        </div>
+
+                        <div class="file-name txt-c">
+                            <p class="fs-14 mb-10">mousa-bdawi.psd</p>
+                        </div>
+
+                        <div class="uploaded-by">
+                            <p class="tt-c c-gray fs-14">mousa-bdawi</p>
+                        </div>
+
+                        <div class="date-info flex-between border-t-ccc p-10 mt-10">
+                            <span class="c-gray fs-14 d-block">20/09/2020</span>
+                            <span class="c-gray fs-14 d-block">12.5MB</span>
+                        </div>
+                    
+                    </div>
+
+                    <div class="file bg-white p-10 rad-10">
+
+                        <div class="icon-download p-absolute">
+                            <i class="fa-solid fa-download c-gray"></i>
+                        </div>
+
+                        <div class="img-part txt-c">
+                            <img class="mtb-15" src="imgs/pdf-64.png" alt="pdf image">
+                        </div>
+
+                        <div class="file-name txt-c">
+                            <p class="fs-14 mb-10">myFile.pdf</p>
+                        </div>
+
+                        <div class="uploaded-by">
+                            <p class="tt-c c-gray fs-14">ahmed</p>
+                        </div>
+
+                        <div class="date-info flex-between border-t-ccc p-10 mt-10">
+                            <span class="c-gray fs-14 d-block">20/09/2020</span>
+                            <span class="c-gray fs-14 d-block">12.5MB</span>
+                        </div>
+                    
+                    </div>
+
+                    <div class="file bg-white p-10 rad-10">
+
+                        <div class="icon-download p-absolute">
+                            <i class="fa-solid fa-download c-gray"></i>
+                        </div>
+
+                        <div class="img-part txt-c">
+                            <img class="mtb-15" src="imgs/pdf-64.png" alt="pdf image">
+                        </div>
+
+                        <div class="file-name txt-c">
+                            <p class="fs-14 mb-10">myFile.pdf</p>
+                        </div>
+
+                        <div class="uploaded-by">
+                            <p class="tt-c c-gray fs-14">ahmed</p>
+                        </div>
+
+                        <div class="date-info flex-between border-t-ccc p-10 mt-10">
+                            <span class="c-gray fs-14 d-block">20/09/2020</span>
+                            <span class="c-gray fs-14 d-block">12.5MB</span>
+                        </div>
+                    
+                    </div>
+
+                    <div class="file bg-white p-10 rad-10">
+
+                        <div class="icon-download p-absolute">
+                            <i class="fa-solid fa-download c-gray"></i>
+                        </div>
+
+                        <div class="img-part txt-c">
+                            <img class="mtb-15" src="imgs/pdf-64.png" alt="pdf image">
+                        </div>
+
+                        <div class="file-name txt-c">
+                            <p class="fs-14 mb-10">myFile.pdf</p>
+                        </div>
+
+                        <div class="uploaded-by">
+                            <p class="tt-c c-gray fs-14">ahmed</p>
+                        </div>
+
+                        <div class="date-info flex-between border-t-ccc p-10 mt-10">
+                            <span class="c-gray fs-14 d-block">20/09/2020</span>
+                            <span class="c-gray fs-14 d-block">12.5MB</span>
+                        </div>
+                    
+                    </div>
+
+                    <div class="file bg-white p-10 rad-10">
+
+                        <div class="icon-download p-absolute">
+                            <i class="fa-solid fa-download c-gray"></i>
+                        </div>
+
+                        <div class="img-part txt-c">
+                            <img class="mtb-15" src="imgs/zip-64.png" alt="pdf image">
+                        </div>
+
+                        <div class="file-name txt-c">
+                            <p class="fs-14 mb-10">osama-file.zip</p>
+                        </div>
+
+                        <div class="uploaded-by">
+                            <p class="tt-c c-gray fs-14">osama</p>
+                        </div>
+
+                        <div class="date-info flex-between border-t-ccc p-10 mt-10">
+                            <span class="c-gray fs-14 d-block">20/09/2020</span>
+                            <span class="c-gray fs-14 d-block">12.5MB</span>
+                        </div>
+                    
+                    </div>
+
+                    <div class="file bg-white p-10 rad-10">
+
+                        <div class="icon-download p-absolute">
+                            <i class="fa-solid fa-download c-gray"></i>
+                        </div>
+
+                        <div class="img-part txt-c">
+                            <img class="mtb-15" src="imgs/png-64.png" alt="pdf image">
+                        </div>
+
+                        <div class="file-name txt-c">
+                            <p class="fs-14 mb-10">nader-file.pdf</p>
+                        </div>
+
+                        <div class="uploaded-by">
+                            <p class="tt-c c-gray fs-14">nader</p>
+                        </div>
+
+                        <div class="date-info flex-between border-t-ccc p-10 mt-10">
+                            <span class="c-gray fs-14 d-block">20/09/2020</span>
+                            <span class="c-gray fs-14 d-block">12.5MB</span>
+                        </div>
+                    
+                    </div>
+
+                    <div class="file bg-white p-10 rad-10">
+
+                        <div class="icon-download p-absolute">
+                            <i class="fa-solid fa-download c-gray"></i>
+                        </div>
+
+                        <div class="img-part txt-c">
+                            <img class="mtb-15" src="imgs/zip-64.png" alt="pdf image">
+                        </div>
+
+                        <div class="file-name txt-c">
+                            <p class="fs-14 mb-10">osama-file.zip</p>
+                        </div>
+
+                        <div class="uploaded-by">
+                            <p class="tt-c c-gray fs-14">osama</p>
+                        </div>
+
+                        <div class="date-info flex-between border-t-ccc p-10 mt-10">
+                            <span class="c-gray fs-14 d-block">20/09/2020</span>
+                            <span class="c-gray fs-14 d-block">12.5MB</span>
+                        </div>
+                    
+                    </div>
+
+                    <div class="file bg-white p-10 rad-10">
+
+                        <div class="icon-download p-absolute">
+                            <i class="fa-solid fa-download c-gray"></i>
+                        </div>
+
+                        <div class="img-part txt-c">
+                            <img class="mtb-15" src="imgs/png-64.png" alt="pdf image">
+                        </div>
+
+                        <div class="file-name txt-c">
+                            <p class="fs-14 mb-10">nader-file.pdf</p>
+                        </div>
+
+                        <div class="uploaded-by">
+                            <p class="tt-c c-gray fs-14">nader</p>
+                        </div>
+
+                        <div class="date-info flex-between border-t-ccc p-10 mt-10">
+                            <span class="c-gray fs-14 d-block">20/09/2020</span>
+                            <span class="c-gray fs-14 d-block">12.5MB</span>
+                        </div>
+                    
+                    </div>
+
+                    <div class="file bg-white p-10 rad-10">
+
+                        <div class="icon-download p-absolute">
+                            <i class="fa-solid fa-download c-gray"></i>
+                        </div>
+
+                        <div class="img-part txt-c">
+                            <img class="mtb-15" src="imgs/pdf-64.png" alt="pdf image">
+                        </div>
+
+                        <div class="file-name txt-c">
+                            <p class="fs-14 mb-10">myFile.pdf</p>
+                        </div>
+
+                        <div class="uploaded-by">
+                            <p class="tt-c c-gray fs-14">ahmed</p>
+                        </div>
+
+                        <div class="date-info flex-between border-t-ccc p-10 mt-10">
+                            <span class="c-gray fs-14 d-block">20/09/2020</span>
+                            <span class="c-gray fs-14 d-block">12.5MB</span>
+                        </div>
+                    
+                    </div>
+
+                    <div class="file bg-white p-10 rad-10">
+
+                        <div class="icon-download p-absolute">
+                            <i class="fa-solid fa-download c-gray"></i>
+                        </div>
+
+                        <div class="img-part txt-c">
+                            <img class="mtb-15" src="imgs/word-64.png" alt="pdf image">
+                        </div>
+
+                        <div class="file-name txt-c">
+                            <p class="fs-14 mb-10">myFile.docs</p>
+                        </div>
+
+                        <div class="uploaded-by">
+                            <p class="tt-c c-gray fs-14">ahmed</p>
+                        </div>
+
+                        <div class="date-info flex-between border-t-ccc p-10 mt-10">
+                            <span class="c-gray fs-14 d-block">20/09/2020</span>
+                            <span class="c-gray fs-14 d-block">12.5MB</span>
+                        </div>
+                    
+                    </div>
+
+                    <div class="file bg-white p-10 rad-10">
+
+                        <div class="icon-download p-absolute">
+                            <i class="fa-solid fa-download c-gray"></i>
+                        </div>
+
+                        <div class="img-part txt-c">
+                            <img class="mtb-15" src="imgs/pdf-64.png" alt="pdf image">
+                        </div>
+
+                        <div class="file-name txt-c">
+                            <p class="fs-14 mb-10">myFile.pdf</p>
+                        </div>
+
+                        <div class="uploaded-by">
+                            <p class="tt-c c-gray fs-14">ahmed</p>
+                        </div>
+
+                        <div class="date-info flex-between border-t-ccc p-10 mt-10">
+                            <span class="c-gray fs-14 d-block">20/09/2020</span>
+                            <span class="c-gray fs-14 d-block">12.5MB</span>
+                        </div>
+                    
+                    </div>
+
+                    <div class="file bg-white p-10 rad-10">
+
+                        <div class="icon-download p-absolute">
+                            <i class="fa-solid fa-download c-gray"></i>
+                        </div>
+
+                        <div class="img-part txt-c">
+                            <img class="mtb-15" src="imgs/pdf-64.png" alt="pdf image">
+                        </div>
+
+                        <div class="file-name txt-c">
+                            <p class="fs-14 mb-10">myFile.pdf</p>
+                        </div>
+
+                        <div class="uploaded-by">
+                            <p class="tt-c c-gray fs-14">ahmed</p>
+                        </div>
+
+                        <div class="date-info flex-between border-t-ccc p-10 mt-10">
+                            <span class="c-gray fs-14 d-block">20/09/2020</span>
+                            <span class="c-gray fs-14 d-block">12.5MB</span>
+                        </div>
+                    
+                    </div>
+
+                    <div class="file bg-white p-10 rad-10">
+
+                        <div class="icon-download p-absolute">
+                            <i class="fa-solid fa-download c-gray"></i>
+                        </div>
+
+                        <div class="img-part txt-c">
+                            <img class="mtb-15" src="imgs/psd-64.png" alt="pdf image">
+                        </div>
+
+                        <div class="file-name txt-c">
+                            <p class="fs-14 mb-10">myFile.pdf</p>
+                        </div>
+
+                        <div class="uploaded-by">
+                            <p class="tt-c c-gray fs-14">hilal</p>
+                        </div>
+
+                        <div class="date-info flex-between border-t-ccc p-10 mt-10">
+                            <span class="c-gray fs-14 d-block">20/09/2020</span>
+                            <span class="c-gray fs-14 d-block">12.5MB</span>
+                        </div>
+                    
+                    </div>
+                    
+                    <div class="file bg-white p-10 rad-10">
+
+                        <div class="icon-download p-absolute">
+                            <i class="fa-solid fa-download c-gray"></i>
+                        </div>
+
+                        <div class="img-part txt-c">
+                            <img class="mtb-15" src="imgs/pdf-64.png" alt="pdf image">
+                        </div>
+
+                        <div class="file-name txt-c">
+                            <p class="fs-14 mb-10">myFile.pdf</p>
+                        </div>
+
+                        <div class="uploaded-by">
+                            <p class="tt-c c-gray fs-14">ahmed</p>
+                        </div>
+
+                        <div class="date-info flex-between border-t-ccc p-10 mt-10">
+                            <span class="c-gray fs-14 d-block">20/09/2020</span>
+                            <span class="c-gray fs-14 d-block">12.5MB</span>
+                        </div>
+                    
+                    </div>
+
+                    <div class="file bg-white p-10 rad-10">
+
+                        <div class="icon-download p-absolute">
+                            <i class="fa-solid fa-download c-gray"></i>
+                        </div>
+
+                        <div class="img-part txt-c">
+                            <img class="mtb-15" src="imgs/word-64.png" alt="pdf image">
+                        </div>
+
+                        <div class="file-name txt-c">
+                            <p class="fs-14 mb-10">myFile.docs</p>
+                        </div>
+
+                        <div class="uploaded-by">
+                            <p class="tt-c c-gray fs-14">ahmed</p>
+                        </div>
+
+                        <div class="date-info flex-between border-t-ccc p-10 mt-10">
+                            <span class="c-gray fs-14 d-block">20/09/2020</span>
+                            <span class="c-gray fs-14 d-block">12.5MB</span>
+                        </div>
+                    
+                    </div>
+
+                    <div class="file bg-white p-10 rad-10">
+
+                        <div class="icon-download p-absolute">
+                            <i class="fa-solid fa-download c-gray"></i>
+                        </div>
+
+                        <div class="img-part txt-c">
+                            <img class="mtb-15" src="imgs/zip-64.png" alt="pdf image">
+                        </div>
+
+                        <div class="file-name txt-c">
+                            <p class="fs-14 mb-10">myFile.pdf</p>
+                        </div>
+
+                        <div class="uploaded-by">
+                            <p class="tt-c c-gray fs-14">yazeed</p>
+                        </div>
+
+                        <div class="date-info flex-between border-t-ccc p-10 mt-10">
+                            <span class="c-gray fs-14 d-block">20/09/2020</span>
+                            <span class="c-gray fs-14 d-block">12.5MB</span>
+                        </div>
+                    
+                    </div>
+
+                    <div class="file bg-white p-10 rad-10">
+
+                        <div class="icon-download p-absolute">
+                            <i class="fa-solid fa-download c-gray"></i>
+                        </div>
+
+                        <div class="img-part txt-c">
+                            <img class="mtb-15" src="imgs/word-64.png" alt="pdf image">
+                        </div>
+
+                        <div class="file-name txt-c">
+                            <p class="fs-14 mb-10">myFile.docs</p>
+                        </div>
+
+                        <div class="uploaded-by">
+                            <p class="tt-c c-gray fs-14">ahmed</p>
+                        </div>
+
+                        <div class="date-info flex-between border-t-ccc p-10 mt-10">
+                            <span class="c-gray fs-14 d-block">20/09/2020</span>
+                            <span class="c-gray fs-14 d-block">12.5MB</span>
+                        </div>
+                    
+                    </div>
+
+                    <div class="file bg-white p-10 rad-10">
+
+                        <div class="icon-download p-absolute">
+                            <i class="fa-solid fa-download c-gray"></i>
+                        </div>
+
+                        <div class="img-part txt-c">
+                            <img class="mtb-15" src="imgs/pptx-64.png" alt="pdf image">
+                        </div>
+
+                        <div class="file-name txt-c">
+                            <p class="fs-14 mb-10">myFile.pdf</p>
+                        </div>
+
+                        <div class="uploaded-by">
+                            <p class="tt-c c-gray fs-14">osama</p>
+                        </div>
+
+                        <div class="date-info flex-between border-t-ccc p-10 mt-10">
+                            <span class="c-gray fs-14 d-block">20/09/2020</span>
+                            <span class="c-gray fs-14 d-block">12.5MB</span>
+                        </div>
+                    
+                    </div>
+
+                    <div class="file bg-white p-10 rad-10">
+
+                        <div class="icon-download p-absolute">
+                            <i class="fa-solid fa-download c-gray"></i>
+                        </div>
+
+                        <div class="img-part txt-c">
+                            <img class="mtb-15" src="imgs/png-64.png" alt="pdf image">
+                        </div>
+
+                        <div class="file-name txt-c">
+                            <p class="fs-14 mb-10">myFile.pdf</p>
+                        </div>
+
+                        <div class="uploaded-by">
+                            <p class="tt-c c-gray fs-14">ali</p>
+                        </div>
+
+                        <div class="date-info flex-between border-t-ccc p-10 mt-10">
+                            <span class="c-gray fs-14 d-block">20/09/2020</span>
+                            <span class="c-gray fs-14 d-block">12.5MB</span>
+                        </div>
+                    
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </sidebar>
+</body>
+</html>

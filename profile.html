@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    
+    <!-- my framework -->
+    <link rel="stylesheet" href="css/myFramework.css">
+
+    <!-- main css file -->
+    <link rel="stylesheet" href="css/styling.css">
+
+    <!-- font awesome connected -->
+     <link rel="stylesheet" href="css/all.css">
+
+    <!-- normalization file that enable property to be worked in multi client! -->
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- logo to the page -->
+    <link rel="icon" href="imgs/accountProfile.png">
+
+</head>
+<body>
+    <!-- class page to all to website -->
+    <sidebar class="page d-flex">
+        
+        <section>
+            <div class="sidebar p-20 m-20 p-relative bg-white">
+                <h3 class="mb-50 p-relative txt-c mt-0 tt-c">SE ahmed nayel</h3>
+                <ul> <!--fa-fw : fixed width-->
+                    <li> <a href="index.html">               <i class="fa-solid fa-chart-gantt fa-fw"></i> <span>   dashboard</span> </a> </li>
+                    <li> <a href="setting.html">             <i class="fa-solid fa-gear"></i>              <span>   settings </span> </a> </li>
+                    <li> <a class="active" href="profile.html">             <i class="fa-solid fa-user-tie"></i>          <span>   profile  </span> </a> </li>
+                    <li> <a href="project.html">             <i class="fa-solid fa-diagram-project"></i>   <span>   projects </span> </a> </li>
+                    <li> <a href="courses.html"><i class="fa-solid fa-graduation-cap"></i>    <span> courses  </span> </a> </li>
+                    <li> <a href="friends.html">               <i class="fa-solid fa-user-group"></i>        <span>   friends  </span> </a> </li>
+                    <li> <a href="files.html">               <i class="fa-solid fa-file"></i>                  <span>   files  </span> </a> </li>
+                    <li> <a href="plan.html">               <i class="fa-solid fa-credit-card"></i>       <span>   plan     </span> </a> </li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="content w-full">
+            
+            <!-- head section -->
+            <div class="head bg-white p-15 flex-between">
+                <!-- in the left -->
+                <div class="search p-relative">
+                    <input class="p-10" type="search" placeholder="search here...">
+                </div>
+            
+                <!-- in the right -->
+                <div class="icon d-flex align-center">
+                    <!-- fa-lg : as a size to be large -->
+                    <span class="notification p-relative"> <i class="fa-solid fa-bell fa-lg"></i> </span>
+                    <img src="imgs/user.jpg" alt="avatar image">
+                </div>
+            
+            </div>
+
+            <!-- topic -->
+            <div class="topic"> 
+                <h1 class="p-relative">profile</h1>
+            </div>
+
+            <div class="profile-page-content">
+
+                <!-- widget 1 -->
+                 <div class="user-info bg-white rad-10 p-20 d-flex f-wrap">
+           
+                    <div class="user-info-p1 border-r-ccc w-fit p-10 txt-c">
+
+                        <div class="img-sec">
+                            <img  class="img-w-100 rad-half" src="imgs/user.jpg" alt="user image">
+                        </div>
+    
+                        <div class="info">
+                        
+                            <h3 class="tt-c">ahmed al darabee</h3>
+                            <p class="fs-14 c-gray">Level 25</p>
+                            
+                            <div class="prog-parent rad-6 bg-eee"> <span class="d-block progress-user rad-6" style="width:70%;"></span></div>
+
+                            <div class="rating mt-10">
+                                <i class="fa-solid fa-star fs-14 c-orange"></i>
+                                <i class="fa-solid fa-star fs-14 c-orange"></i>
+                                <i class="fa-solid fa-star fs-14 c-orange"></i>
+                                <i class="fa-solid fa-star fs-14 c-orange"></i>
+                                <i class="fa-solid fa-star fs-14 c-orange"></i>
+                            </div>
+    
+                            <p>550 Rating</p>
+    
+                        </div>
+                    </div>
+
+                    <!-- .auth-info .box-data h3 -->
+                    <div class="auth-info">
+
+                        <!-- box info one -->
+                        <div class="box-data flex-between f-wrap p-10 b-b-eee">
+                            
+                            <h3 class="tt-c fw-normal c-gray w-full m-b">general information's</h3>
+                            
+                            <div class="all-data d-flex mt-MN">
+
+                                <div class="data m-10">
+                                    <span class="c-gray fs-14 tt-c">full name: </span>
+                                    <span class="tt-c fs-14 ">ahmed al darabee</span>
+                                </div>
+    
+                                <div class="data m-10">
+                                    <span class="c-gray fs-14 tt-c">gender: </span>
+                                    <span class="tt-c fs-14 ">male</span>
+                                </div>
+    
+                                <div class="data m-10">
+                                    <span class="c-gray fs-14 tt-c">country: </span>
+                                    <span class="tt-c fs-14 ">jordan</span>
+                                </div>
+                                
+                            </div>
+
+                            <div class="toggle-btn-component">
+                                <label> 
+                                    <input class="toggle-checkbox" type="checkbox">
+                                    <div class="toggle-switch"></div>
+                                </label>
+                            </div> 
+
+                        </div>
+                        
+                        <!-- box info two -->
+                        <div class="box-data flex-between f-wrap p-10 b-b-eee">
+                            <h3 class="tt-c fw-normal c-gray w-full m-b">personal information's</h3>
+                            
+                            <!--.auth-info .box-data .all-data -->
+                            <div class="all-data d-flex mt-MN">
+
+                                <div class="data m-10">
+                                    <span class="c-gray fs-14 tt-c">email: </span>
+                                    <span class="tt-c fs-14 ">ahmed@gmail.com</span>
+                                </div>
+    
+                                <div class="data m-10">
+                                    <span class="c-gray fs-14 tt-c">phone: </span>
+                                    <span class="tt-c fs-14 ">+962785266266</span>
+                                </div>
+    
+                                <div class="data m-10">
+                                    <span class="c-gray fs-14 tt-c">date: </span>
+                                    <span class="tt-c fs-14 ">13/10/2003</span>
+                                </div>
+		                    </div>
+
+                            <div class="toggle-btn-component">
+                                <label> 
+                                    <input class="toggle-checkbox" type="checkbox">
+                                    <div class="toggle-switch"></div>
+                                </label>
+                           </div> 
+
+                        </div>
+
+                        <!-- box info three  -->
+                        <div class="box-data flex-between f-wrap p-10 b-b-eee">
+
+                            <h3 class="tt-c fw-normal c-gray w-full m-b">job information's</h3>
+                            
+                            <div class="all-data d-flex mt-MN">
+
+                                <div class="data m-10">
+                                    <span class="c-gray fs-14 tt-c">title: </span>
+                                    <span class="tt-c fs-14 ">full stack web</span>
+                                </div>
+
+                                <div class="data m-10">
+                                    <span class="c-gray fs-14 tt-c">backend lang: </span>
+                                    <span class="tt-c fs-14 ">node js</span>
+                                </div>
+
+                                <div class="data m-10">
+                                    <span class="c-gray fs-14 tt-c">years of esperance: </span>
+                                    <span class="tt-c fs-14 ">+1</span>
+                                </div>
+                                
+                            </div>
+
+                            <div class="toggle-btn-component">
+                                <label> 
+                                    <input class="toggle-checkbox" type="checkbox">
+                                    <div class="toggle-switch"></div>
+                                </label>
+                            </div> 
+
+                        </div>
+
+                        <!-- box info four  -->
+                        <div class="box-data flex-between f-wrap p-10 b-b-eee">
+    
+                            <h3 class="tt-c fw-normal c-gray w-full m-b">billing information's</h3>
+                            
+                            <div class="all-data d-flex mt-MN">
+
+                                <div class="data m-10">
+                                    <span class="c-gray fs-14 tt-c">method: </span>
+                                    <span class="tt-c fs-14 ">click</span>
+                                </div>
+    
+                                <div class="data m-10">
+                                    <span class="c-gray fs-14 tt-c">email: </span>
+                                    <span class="tt-c fs-14 ">ahmed@gmail.com</span>
+                                </div>
+    
+                                <div class="data m-10">
+                                    <span class="c-gray fs-14 tt-c">subscribe: </span>
+                                    <span class="tt-c fs-14 ">monthly</span>
+                                </div>
+                                
+                            </div>
+
+                            <div class="toggle-btn-component">
+                                <label> 
+                                    <input class="toggle-checkbox" type="checkbox">
+                                    <div class="toggle-switch"></div>
+                                </label>
+                            </div> 
+
+                        </div>
+                    </div>
+                
+                </div>
+
+                <!-- widget 2 -->
+                <div class="skills-activities d-flex gap-20">
+                    
+                    <div class="skills-section  bg-white rad-10 p-20 f-grow-1 m-10">
+                    
+                        <div class="title-part">
+                            <h3 class="tt-c"> my skills </h3>
+                            <p class="tt-c c-gray fs-14">complete skills list</p>
+                        </div>
+
+                        <div class="content">
+                            <ul class="m-0">
+
+                                <li class="b-b-eee d-flex"> 
+                                    <span  >html</span>
+                                    <span  >pug js</span>
+                                    <span  >hamal</span>
+                                </li>
+
+                                <li class="b-b-eee d-flex"> 
+                                    <span  >css</span>
+                                    <span  >sass</span>
+                                    <span  >stylus</span>
+                                </li>
+
+                                <li class="b-b-eee d-flex"> 
+                                    <span  >javaScript</span>
+                                    <span  >node js</span>
+                                </li>
+
+                                <li class="b-b-eee d-flex"> 
+                                    <span  >vue js</span>
+                                    <span  >postman</span>
+                                </li>
+
+                                <li class="b-b-eee d-flex"> 
+                                    <span  >swagger</span>
+                                    <span  >cpp</span>
+                                </li>
+
+                                <li class=" d-flex"> 
+                                    <span  >java</span>
+                                    <span  >php</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    
+                    
+                    </div>
+
+                    <div class="activities-section bg-white rad-10 p-20 f-grow-2  m-10">
+
+                        <div class="title-part">
+                            <h3 class="tt-c">latest activities</h3>
+                            <p class="fs-14 c-gray">latest actives done by the user</p>
+                        </div>
+
+                        <div class="content-data">
+                            
+                            <!-- box activity -->
+                            <div class="box-act d-flex align-center">
+
+                                <div class="img-sec">
+                                    <img class="mr-5" src="imgs/market.png" alt="logo image">
+                                </div>
+
+                                <div class="info txt-c-mobile">
+                                    <p class="tt-c">store</p>
+                                    <p class="tt-c fs-14 c-gray mt-MN">storage what your need</p>
+                                </div>
+
+                                <div class="day m-l-auto">
+                                    <span class="d-block tt-c">18:10</span>
+                                    <span class="d-block tt-c fs-14 c-gray">yesterday</span>
+                                </div>
+
+                            </div>
+
+                            <!-- box activity -->
+                            <div class="box-act d-flex align-center">
+
+                                <div class="img-sec">
+                                    <img class="mr-5" src="imgs/academy.png" alt="logo image">
+                                </div>
+
+                                <div class="info txt-c-mobile">
+                                    <p class="tt-c">academy</p>
+                                    <p class="tt-c fs-14 c-gray mt-MN">learning what your need</p>
+                                </div>
+
+                                <div class="day m-l-auto">
+                                    <span class="d-block tt-c">15:00</span>
+                                    <span class="d-block tt-c fs-14 c-gray">today</span>
+                                </div>
+
+                            </div>
+
+                            <!-- box activity -->
+                            <div class="box-act d-flex align-center">
+
+                                <div class="img-sec">
+                                    <img class="mr-5" src="imgs/rank.png" alt="logo image">
+                                </div>
+
+                                <div class="info txt-c-mobile">
+                                    <p class="tt-c">rank</p>
+                                    <p class="tt-c fs-14 c-gray mt-MN">motivation about your success </p>
+                                </div>
+
+                                <div class="day m-l-auto">
+                                    <span class="d-block tt-c">10:00</span>
+                                    <span class="d-block tt-c fs-14 c-gray">today</span>
+                                </div>
+
+                            </div>
+
+                            <!-- box activity -->
+                            <div class="box-act d-flex align-center">
+
+                                <div class="img-sec">
+                                    <img class="mr-5" src="imgs/market.png" alt="logo image">
+                                </div>
+
+                                <div class="info txt-c-mobile">
+                                    <p class="tt-c">store</p>
+                                    <p class="tt-c fs-14 c-gray mt-MN">storage what your need</p>
+                                </div>
+
+                                <div class="day m-l-auto">
+                                    <span class="d-block tt-c">18:10</span>
+                                    <span class="d-block tt-c fs-14 c-gray">yesterday</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            
+            </div>
+
+        </section>
+    </sidebar>
+</body>
+</html>

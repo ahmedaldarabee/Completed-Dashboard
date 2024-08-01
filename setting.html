@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setting Page</title>
+    
+    <!-- my framework -->
+    <link rel="stylesheet" href="css/myFramework.css">
+
+    <!-- main css file -->
+    <link rel="stylesheet" href="css/styling.css">
+
+    <!-- font awesome connected -->
+     <link rel="stylesheet" href="css/all.css">
+
+    <!-- normalization file that enable property to be worked in multi client! -->
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- logo to the page -->
+    <link rel="icon" href="imgs/configuration.png">
+
+</head>
+<body>
+    <!-- class page to all to website -->
+    <sidebar class="page d-flex">
+        
+        <section>
+            <div class="sidebar p-20 m-20 p-relative bg-white">
+                <h3 class="mb-50 p-relative txt-c mt-0 tt-c">SE ahmed nayel</h3>
+                <ul> <!--fa-fw : fixed width-->
+                    <li> <a href="index.html">               <i class="fa-solid fa-chart-gantt fa-fw"></i> <span>   dashboard</span> </a> </li>
+                    <li> <a class="active" href="setting.html">             <i class="fa-solid fa-gear"></i>              <span>   settings </span> </a> </li>
+                    <li> <a href="profile.html">             <i class="fa-solid fa-user-tie"></i>          <span>   profile  </span> </a> </li>
+                    <li> <a href="project.html">             <i class="fa-solid fa-diagram-project"></i>   <span>   projects </span> </a> </li>
+                    <li> <a href="courses.html"><i class="fa-solid fa-graduation-cap"></i>    <span> courses  </span> </a> </li>
+                    <li> <a href="friends.html">               <i class="fa-solid fa-user-group"></i>        <span>   friends  </span> </a> </li>
+                    
+                    <li> <a href="files.html">               <i class="fa-solid fa-file"></i>                  <span>   files  </span> </a> </li>
+                    <li> <a href="plan.html">               <i class="fa-solid fa-credit-card"></i>       <span>   plan     </span> </a> </li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="content w-full">
+            
+            <!-- head section -->
+            <div class="head bg-white p-15 flex-between">
+                <!-- in the left -->
+                <div class="search p-relative">
+                    <input class="p-10" type="search" placeholder="search here...">
+                </div>
+            
+                <!-- in the right -->
+                <div class="icon d-flex align-center">
+                    <!-- fa-lg : as a size to be large -->
+                    <span class="notification p-relative"> <i class="fa-solid fa-bell fa-lg"></i> </span>
+                    <img src="imgs/user.jpg" alt="avatar image">
+                </div>
+            
+            </div>
+
+            <!-- topic -->
+            <div class="topic"> 
+                <h1 class="p-relative">settings</h1>
+            </div>
+
+            <div class="settings-page m-20 d-grid gap-20">
+
+                <!-- widget 1 -->
+                <div class="widget-1 bg-white rad-10 p-20">
+
+                    <div class="main-title">
+                        <h3 class="tt-c">site control</h3>
+                        <p class="fs-14 c-gray">control the website if there is maintenance</p>
+                    </div>
+
+                    <div class="needed-content mt-20">
+                        <h3 class="tt-c mb-M8">website control</h3>
+                        <div class="toggle-btn-component flex-between mt-0">
+                            <!-- without label you can't click in any width:76px to change content!  -->
+                            <p class=" tt-c c-gray fs-14">open / close website and type the reason</p>
+                            <label>
+                                <input class="toggle-checkbox" type="checkbox">
+                                <div class="toggle-switch"></div>
+                            </label>
+                        </div> 
+                    </div>
+
+                    <div class="message-sec-w1">
+                        <textarea class="border-ccc focus-none w-full mt-10 rad-6 no-resize-ta min-height-180-px p-lt-10"></textarea>
+                    </div>
+
+                </div>
+
+                <!-- widget 2 -->
+                <div class="widget-2 bg-white rad-10 p-20">
+                    
+                    <div class="title-section-w2 mb-10 mt-0">
+                        <h3 class="tt-c">general info</h3>
+                        <p class="tt-c fs-14 c-gray">general information about your account</p>
+                    </div>
+
+                    <div class="main-content">
+
+                        <div class="box mt-10">
+                            <label for="FName" class="c-gray tt-c">first name</label>
+                            <input class="focus-none border-ccc p-3 p-l-5 rad-6 mt-10" type="text" placeholder="first name" id="FName">
+                        </div>
+
+                        <div class="box mt-20">
+                            <label for="LName" class="c-gray tt-c">last name</label>
+                            <input class="focus-none border-ccc p-3 p-l-5 rad-6 mt-10" type="text" placeholder="last name" id="LName">
+                        </div>
+
+                        <div class="box-ch mt-20">
+                            <label for="Email" class="c-gray tt-c">your email</label>
+                            <input class="focus-none border-ccc p-3 p-l-5 rad-6 mt-10" type="text" placeholder="email" id="Email" disabled>
+                            <a href="#" class="change c-white bg-black tt-c p-5 rad-10 fs-14"> change </a>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+                <!-- widget 3 -->
+                <div class="widget-3 bg-white rad-10 p-20">
+                    
+                    <div class="main-title-w3">
+                        <h3 class="tt-c mt-0">security info</h3>
+                        <p class="tt-c c-gray fs-14">security information about your account </p>
+                    </div>
+
+                    <!-- content -->
+                     <div class="main-content-w3 p-10">
+
+                        <div class="box-info border-b-ccc p-b-10 flex-between">
+                            
+                            <div class="info">
+                                <h3 class="tt-c mb-M8">password</h3>
+                                <p class="c-gray tt-c fs-14 mt-M8">last change on 25/07/2024</p>
+                            </div>
+                            
+                            <div class="change-box">
+                                <a href="#" class="p-5 fs-14 bg-blue rad-10 c-white tt-c">change</a>
+                            </div>
+
+                        </div>
+
+                        <div class="box-info border-b-ccc p-b-10 flex-between">
+                            
+                            <div class="info">
+                                <h3 class="tt-c mb-M8">authentication</h3>
+                                <p class="c-gray tt-c fs-14 mt-M8">enable / disable this feature</p>
+                            </div>
+                            
+                            <div class="toggle-btn-component">
+                                <label> 
+                                    <input class="toggle-checkbox" type="checkbox">
+                                    <div class="toggle-switch"></div>
+                                </label>
+                            </div> 
+
+                        </div>
+
+                        <div class="box-info p-b-10 flex-between">
+                            
+                            <div class="info">
+                                <h3 class="tt-c mb-M8">devices</h3>
+                                <p class="c-gray tt-c fs-14 mt-M8">check the login devices list</p>
+                            </div>
+                            
+                            <div class="change-box">
+                                <a href="#" class="p-5 fs-14 bg-blue rad-10 c-white tt-c">devices</a>
+                            </div>
+
+                        </div>
+
+                     </div>
+
+                </div>
+
+                <!-- widget 4 -->
+                <div class="social-media p-20 bg-white rad-10">
+
+                    <div class="title-section-sm">
+                        <h2 class="tt-c">my social media</h2>
+                    </div>
+
+                    <div class="all-content">
+
+                        <div class="mt-20 box-sm d-flex bg-blue-lt d-flex">
+
+                            <span class="d-block mr-10 bg-blue p-10 c-white"><i class="fa-brands fa-x-twitter"></i>  </span>
+                            
+                            <div class="status flex-between f-grow-1">
+                                <span class="d-block fs-14" >90K Followers</span>
+                                <span class="d-block fs-14 bg-blue c-white p-10 rad-10 ml-15" >Follow</span>
+                            </div>
+
+
+                        </div>
+
+                        <div class="mt-20 box-sm d-flex bg-blue-lt d-flex">
+
+                            <span class="d-block mr-10 bg-blue p-10 c-white"><i class="fa-brands fa-facebook-f"></i></span>
+                            
+                            <div class="status flex-between f-grow-1">
+                                <span class="d-block fs-14" >600 Followers</span>
+                                <span class="d-block fs-14 bg-blue c-white p-10 rad-10 ml-15" >Follow</span>
+                            </div>
+
+
+                        </div>
+
+                        <div class="mt-20 box-sm d-flex bg-blue-lt d-flex">
+
+                            <span class="d-block mr-10 bg-black p-10 c-white"><i class="fa-brands fa-github"></i></span>
+                            
+                            <div class="status flex-between f-grow-1">
+                                <span class="d-block fs-14" >500 Followers</span>
+                                <span class="d-block fs-14 bg-blue c-white p-10 rad-10 ml-15" >Follow</span>
+                            </div>
+
+
+                        </div>
+
+                        <div class="mt-20 box-sm d-flex bg-blue-lt d-flex">
+
+                            <span class="d-block mr-10 bg-blue p-10 c-white"><i class="fa-brands fa-linkedin-in"></i></span>
+                            
+                            <div class="status flex-between f-grow-1">
+                                <span class="d-block fs-14" >650K Followers</span>
+                                <span class="d-block fs-14 bg-blue c-white p-10 rad-10 ml-15" >Follow</span>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- widget 5-->
+                <div class="widget-control p-20 bg-white rad-10">
+
+                    <div class="title">
+                        <h3 class="tt-c mt-0">widgets control</h3>
+                        <p class="tt-c c-gray fs-14">show / hidden widgets</p>
+                    </div>
+
+                    <div class="content">
+
+                        <div class="box-ck p-10 mt-10">
+                            <input type="checkbox" id="QD" checked>
+                            <label for="QD" class="tt-c">quick draft</label>
+                        </div>
+
+                        <div class="box-ck p-10 mt-10">
+                            <input type="checkbox" id="YT" checked>
+                            <label for="YT" class="tt-c">yearly targets</label>
+                        </div>
+
+                        <div class="box-ck p-10 mt-10">
+                            <input type="checkbox" id="TS">
+                            <label for="TS" class="tt-c"> tickets statistics </label>
+                        </div>
+
+                        <div class="box-ck p-10 mt-10">
+                            <input type="checkbox" id="LN" checked>
+                            <label for="LN" class="tt-c">latest news</label>
+                        </div>
+
+                        <div class="box-ck p-10 mt-10">
+                            <input type="checkbox" id="LT">
+                            <label for="LT" class="tt-c">latest tasks</label>
+                        </div>
+
+                        <div class="box-ck p-10 mt-10">
+                            <input type="checkbox" id="TSI">
+                            <label for="TSI" class="tt-c"> top search item </label>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <!-- widget 6 -->
+                <div class="widget-backup p-20 bg-white rad-10">
+                    
+                    <div class="title-backup ">
+                        <h3 class="tt-c">backup manager</h3>
+                        <p class="fs-14 c-gray tt-c">control backup time and location</p>
+                    </div>
+
+                    <!-- content information's -->
+                    <div class="content-choices border-b-ccc p-b-10">
+
+                        <div class="box-BM m-10">
+                            <input type="radio" id="Daily" name="time">
+                            <label for="Daily">Daily</label>
+                        </div>
+
+                        <div class="box-BM m-10">
+                            <input type="radio" id="Weekly" name="time">
+                            <label for="Weekly">Weekly</label>
+                        </div>
+
+                        <div class="box-BM m-10">
+                            <input type="radio" id="Monthly" name="time">
+                            <label for="Monthly">Monthly</label>
+                        </div>
+
+                    </div>
+
+                    <!-- .widget-backup .content-servers .server -->
+                    <div class="content-servers p-15 d-flex align-center w-full">
+                        
+                        <input type="radio" id="two" name="server">
+                        <div class="server w-full m-10 p-10 border-ccc txt-c rad-10">
+                            <label for="two" class="tt-c d-block"><i class="fa-solid fa-server "></i> <span class="d-block">moath</span> </label>
+                        </div>
+
+                        <input type="radio" id="one" name="server" checked>
+                        <div class="server w-full m-10 p-10 border-ccc txt-c rad-10" >
+                            <label for="one" class="tt-c d-block"><i class="fa-solid fa-server "></i> <span class="d-block">ahmed</span> </label>
+                        </div>
+
+                        <input type="radio" id="three" name="server">
+                        <div class="server w-full m-10 p-10 border-ccc txt-c rad-10">
+                            <label for="three" class="tt-c d-block"><i class="fa-solid fa-server "></i> <span class="d-block">islam</span> </label>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </sidebar>
+</body>
+</html>
